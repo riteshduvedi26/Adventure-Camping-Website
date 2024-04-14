@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+<head>
+<title>Contact_us
+</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="icon" href="css\images\icon.ico" type="image/ico" />
+<!-- <link rel="stylesheet" href="css/contact_us.css"> -->
+</head>
+<body>
+  <style>
+    * {
+  box-sizing: border-box;
+}
+
+
+body{
+	background:url("/css/images/bg_checkout.jpg") no-repeat center;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+h1{
+	font-size:40px;
+	font-style:italic;
+	text-align:center;
+	text-decoration:underline;
+	color:black;
+	text-shadow:4px 4px 5px white;
+}
+p{text-align:center;
+	font-style:italic;
+	font-size:20px;
+}
+
+ .container{
+	border:5px solid white;
+	border-radius: 5px;
+    background-color:#ffcc33;
+    padding:5px 10px 5px 10px ;
+    width:700px;
+}
+
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+  font-size:18px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+  font-size:20px;
+}
+
+input[type=text],select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+input[type=email]{
+	 width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color:black;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+  </style>
+<div class="container">
+<h1>CONTACT US..</h1>
+<p>If you have any Queries ,please donot hesitate to conatct us...</p> 
+<form onsubmit="myFunction()">
+<!--first row-->
+<div class="row">
+<div class="col-25">
+<label for="fname">*First Name:</label></div>
+<div class="col-75">
+<input type="text" id="fname" name="fname" value="Marry" placeholder="First Name" pattern="[A-Za-z]{1,15}" title="*Enter First name only in lower and uppercase alphabet and contain 15 characters*" required>
+</div>
+</div>
+<!--second row-->
+<div class="row">
+<div class="col-25">
+<label for="lname">*Last Name:</label></div>
+<div class="col-75">
+<input type="text" id="lname" name="lname" value="Twain" placeholder="Last Name" pattern="[A-Za-z]{1,15}" title="*Enter Last name only in lower and uppercase alphabet and contain 15 characters*" required>
+</div>
+</div>
+<!--thirsd row-->
+<div class="row">
+<div class="col-25">
+<label for="email">*E-mail:</label></div>
+<div class="col-75">
+<input type="email" id="email" name="email" value="xyz@gmail.com" placeholder="E-mail" required>
+</div>
+</div>
+<!--fourth row-->
+<div class="row">
+<div class="col-25">
+<label for="number">*Mobile Number:</label></div>
+<div class="col-75">
+<input type="text" id="number" name="email" placeholder="Phone Number" pattern="[0-9]{10}" title="*Enter ten digits of phone number*"required>
+</div>
+</div>
+<div class="row">
+<div class="col-25">
+<label for="country">*Country:</label></div>
+<div class="col-75">
+<select id="country" name="country">
+  <option value="India">India</option>
+  <option value="Australia">Australia</option>
+  <option value="America">America</option>
+  <option value="Canada">Canada</option>
+  <option value="others">Others</option>
+  </select>
+</div>
+</div>
+   <div class="row">
+      <div class="col-25">
+        <label for="subject">*Subject:</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:150px" required></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+</form>
+</div>
+<script>
+function myFunction(){
+  alert("The Form is submitted successfully!!***HAPPY JOURNEY***")
+}
+</script>
+</body>
+</html>

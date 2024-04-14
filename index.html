@@ -1,0 +1,377 @@
+<!Doctype html>
+<html lang="en">
+<head>
+<title>Adventurer</title>
+
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>index</title>
+   <link rel="icon" href="ip logo.jpg" type="image/ico" />
+  <!--BOOTSTRAP CDN FOR ICON-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <!--BOOTSTRAP CDN-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   <!--External CSS linking-->
+  <!-- <link rel="stylesheet" href="css/style_index.css">  -->
+</head>
+<body>
+  <style>
+    body{
+  background-color: black;
+  margin:auto;
+}
+
+
+/* Container 1 */
+
+/*background image...div1*/
+.header{
+background:url("/css/images/bg1div.jpg") no-repeat center;
+background-size: cover;
+position:relative;
+height:850px;
+
+}
+/*nav styling...*/
+.navbar{
+  margin: auto;
+  padding: 20px;
+}
+.nav-item{
+  margin: auto;
+}
+a{text-decoration: none;
+  color: white;
+  font-size: 20px;
+  margin: auto;
+  padding:0 50px 0 50px;
+}
+a:hover{
+  color:#ff9999;
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+/*logo styling..*/
+.map{
+  width: 50px;
+  margin: auto;
+}
+.map:hover{
+ opacity: 0.5;
+  transition: 0.3s;
+  width:60px;
+}
+/*heading styling,,,*/
+h1{
+  text-align: center;
+  margin: 150px 0 0 0;
+  color: white;
+  font-size: 5rem;
+}
+
+h3{
+  text-align: center;
+  color:white ;
+  
+}
+.toggler{
+  margin: auto;
+  width: 60px;
+}
+.switch {
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  position: absolute;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #1a1a2e;
+  transition: .4s;
+}
+.slider:before {
+  position: absolute;
+  content:"";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+}
+input:checked + .slider {
+  background-color: #ff99cc;
+}
+input:focus + .slider {
+  box-shadow: 0 0 1px #1a1a2e;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+/* Rounded sliders */
+.slider {
+  border-radius: 34px;
+}
+.slider:before {
+  border-radius: 50%;
+}
+
+/*container two*/
+
+
+p{
+  color: white;
+  text-align: center;
+ 
+}
+h2{padding:20px;
+  color: #ffcc00;
+  text-align:center;
+  text-decoration:underline;
+  font-weight:bold;
+}
+.card-deck{
+  width: 100%;
+  margin: auto;
+
+}
+.text{
+  top: 0;
+  position: relative;
+  width: 500px;
+  margin: auto;
+  padding-bottom: 80px;
+}
+.a{
+  width: 100%;
+}
+.a:hover{
+  transition: 0.9s;
+  transform: scaleX(-1);
+  opacity: 0.5;
+}
+.seem{
+  width: inherit;
+  text-align: center;
+  padding:50px;
+}
+
+
+/* container 3 */
+.gp{
+  text-align: center;
+  color:   #ffff33;
+  text-decoration:underline;
+}
+.card-group{
+  margin: auto;
+  border: none;
+  width: 60%;
+  background-color:inherit;
+}
+.card{
+  background-color:inherit;
+  padding: 10px;
+}
+.card-body{
+  background-color:black;
+}
+/* footer */
+
+.footer{
+  margin: auto;
+  position: relative;
+  top: 600px;
+}
+.logos{
+  margin-left: 45%;
+  margin-right: 45%;
+  width: 20%;
+}
+.fwall{
+  background-image: url("images/bg1.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 700px;
+  /* position: absolute; */
+}
+
+/* Mobile friendly */
+
+@media only screen and (max-width: 600px) {
+  .containertwo{
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+  }
+  p{
+    width: 200px;
+    font-size: 0.7rem;
+    margin: auto;
+  }
+  .cards{
+    width: 100%;
+    margin: auto;
+  }
+  .text{
+    width:250px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .cards:hover{
+    width:90%;
+  }
+  .card-group{
+    width: 80%;
+  }
+  .card-deck{
+    width: 200px;
+  }
+  .ex{
+    width: inherit;
+  }
+body{
+  margin-right: 0;
+}
+.logos{
+  margin-left: 30%;
+  margin-right: 30%;
+  width: 60%;
+}
+}
+  </style>
+<!--First div....-->
+<div class="header">
+<!--navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark">
+ <!-- Toggler/collapsibe Button -->
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>  
+
+  <!--Navbar links...-->
+<div class="collapse navbar-collapse" id="collapsibleNavbar">
+<ul class="navbar-nav">
+  <li class="nav-item">
+    <a  href="index.html">Home</a>
+  </li>
+
+  <li class="nav-item">
+  <a href="package.html">Packages</a>
+ <li>  
+ <li class="nav-item">
+   <a  href="Blogs.html">Blogs</a>
+ </li>
+ <li class="nav-item">
+  <a  class="maplink"  href="#"><img class="map" src="ip logo.jpg" alt="Adventure"></a>
+</li>
+<!-- <li class="nav-item">
+   <a  class="maplink"  href="#"><img class="map" src="css\images\logo.png" alt="The mirado"></a>
+ </li>  -->
+  <li class="nav-item">
+     <a  href="about.html">About us</a>
+
+ </li>
+ <li class="nav-item">
+   <a  href="contact_us.html">Contact us</a>
+ </li>
+ <li class="nav-item">
+  <a  href="weather.html">Weather</a>
+
+</li>
+</ul>
+</div>
+</nav>
+ <h1 class='mirado'>The Adventure</h1>
+    <h3 class='mirado'>#Shrine of Explorers</h3>
+   <!--toggler...-->
+   <div class="toggler">
+    <label class="switch">
+      <input class="mode" type="checkbox">
+      <span class="slider round"></span>
+    </label>
+  </div>  
+</div>
+<!--Second div-->
+<div class="containertwo">
+<div class="text">
+<h2>EXPLORE THE WORLD</h2>
+<p class="ex">Because you can not find peace trapped inside your home. Explore the most natural places on earth where barely anyone goes and find yourself.</p>
+</div>
+<!--cards deck ..-->
+<div class="card-deck">
+<!--paris card-->
+      <div class="card">
+        <img class="card-img-top a" src="css\images\paris.jpg" alt="PARIS">
+      </div>
+      <!--switzerland card-->
+      <div class="card">
+        <img class="card-img-top a" src="css\images\swit.jpg" alt="SWITZERLAND">
+      </div>
+      <!--hongkong card-->
+      <div class="card">
+        <img class="card-img-top a" src="css\images\hong.jpg" alt="HONGKONG">
+     <!-- </div>
+      <a class="seem" href="package.html">SEE MORE></a>
+    </div> -->
+  </div>
+  <!--Third div-->
+   <div class="containerthree">
+    <div class="text">
+      <h2>JOURNALS</h2>
+      <p>Below are the journals/blogs written by our satisfied customers as they have experienced teh beauty of places they have visited in the most immersive way possible.</p>
+    </div>
+    <!--card group-->
+<div class="card-group">
+<!--pokhara card-->
+  <div class="card">
+   <img class="card-img-top" src="css\images\pokhara.jpg" alt="pokhara">
+    <div class="card-body">
+          <h5 class="card-title gp"><b>POKHARA</b></h5>
+          <p class="card-text">One of the most beautiful yet low budget natural destination in our neighbouring country Nepal. Famous for mountain villages and lakes.</p>
+        </div>
+   </div>
+   <!--Jaipur card-->
+   <div class="card">
+   <img class="card-img-top" src="css\images\jaipur.jpg" alt="jaipur">
+  <div class="card-body">
+          <h5 class="card-title gp"><b>JAIPUR</b></h5>
+          <p class="card-text">Jaipur is also known as the Pink City, due to the dominant color scheme of its buildings. It is located 268 km (167 miles) from the national capital New Delhi.</p>
+        </div>
+   </div>
+  </div>
+  </div>
+  <!--footer part-->
+    <footer class="fwall">
+    <div class='footer'>
+      <p>© Copyright 2020 , All Rights Reserved.... </p>
+       <div class="logos">
+        <i class="fab fa-2x fa-facebook punk"></i>
+        <i class="fab fa-2x fa-twitter-square punk"></i>
+        <i class="fab fa-2x fa-instagram punk"></i>
+        <i class="fas fa-2x fa-envelope punk"></i>
+      </div>
+    </div>
+
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="Javascript/demo.js"></script> 
+</body>
+</html>
